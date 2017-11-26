@@ -62,7 +62,7 @@ def get_avatar(uid):
 def get_live_thumbnail(uid, camserver):
     '''returns content type and content as BytesIO or None'''
     URL_TEMPLATE = 'https://snap.mfcimg.com/snapimg/{}/320x240/mfc_{}'
-    return _get_img_from_url(URL_TEMPLATE.format(camserver - 500, uid + 100_000_000))
+    return _get_img_from_url(URL_TEMPLATE.format(camserver - 500, uid + 100000000))
 
 def _get_img_from_url(url):
     try:
